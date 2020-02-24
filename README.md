@@ -1,5 +1,5 @@
 # toxicity_model
-1st attempt to create a simple web API where use can give an input in the text format and using my own machine learning model, predict the toxicity of the text.
+1st attempt to create a simple web API where user can give an input in the text format and using our own machine learning model, predict the toxicity of the text.
 Toxicity in text is defined by rude, disrespectful, or unresaonable comments that is likely to make people leave a discussion.
 
 # Getting Started
