@@ -8,7 +8,46 @@ A very unpleasant, aggressive, filled with hatred comments or otherwise very lik
 Follow this document to download, use and understand the toxicity_model.
 
 ## Prerequisites
-'''
+```
 Python 3.0 or above
 Disk Space 1 GB or more
-'''
+```
+
+Following python libraries:
+```
+Flask - 1.1.1
+json - 2.0.9
+requests - 2.22.0
+pandas - 0.25.2
+numpy - 1.17.3
+keras - 2.2.4
+tensorflow - 1.14.0
+pickle
+os
+```
+
+## Installing
+Flask
+```
+pip install Flask
+```
+Requests
+```
+pip install requests
+```
+Pandas
+```
+pip install pandas
+```
+NumPy
+```
+pip install numpy
+```
+Keras
+```
+pip install keras
+```
+TensorFlow
+```
+pip install tensorflow==1.14
+```
