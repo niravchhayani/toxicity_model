@@ -56,14 +56,14 @@ Download the repository on the local drive
 The structure of the project folder should look like this:
 * Project Folder
   * Models
-    ~ tokenizer_200d_1M_10.pickle
-    ~ best_model_200d_1M_10.h5
-    ~ best_model_200d_1M_10_in_json.json
+    ** tokenizer_200d_1M_10.pickle
+    ** best_model_200d_1M_10.h5
+    ** best_model_200d_1M_10_in_json.json
   * templates
-    ~ simple.html
-    ~ home.html
+    ** simple.html
+    ** home.html
   * static
     * css
-      ~ theme.css
-  ~ api.py
+      ** theme.css
+  ** api.py
     
