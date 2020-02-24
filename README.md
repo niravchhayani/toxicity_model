@@ -134,10 +134,10 @@ Feel free to try out different texts.
 **Enjoy..!!!**
 
 # Authors
-* Nirav Chhayani - *Initial Work*
-  - Jr. Data Scientist,  
-    Avrij Insights Inc.  
-    Canada.
+* Nirav Chhayani - *Initial Work*.   
+  Jr. Data Scientist,  
+  Avrij Insights Inc.  
+  Canada.
 
 # Issues
 Write down in comment section of the git repository.
