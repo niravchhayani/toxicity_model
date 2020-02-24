@@ -27,6 +27,9 @@ os
 ```
 
 ## Installing
+
+Open command prompt and type following to install required packages:
+
 Flask
 ```
 pip install Flask
