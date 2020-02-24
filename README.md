@@ -135,8 +135,8 @@ Feel free to try out different texts.
 
 # Authors
 * Nirav Chhayani - *Initial Work*
-  - Jr. Data Scientist
-    Avrij Insights Inc.
+  - Jr. Data Scientist . 
+    Avrij Insights Inc.  
     Canada.
 
 # Issues
