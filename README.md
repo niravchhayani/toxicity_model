@@ -61,9 +61,37 @@ The structure of the project folder should look like this:
     - best_model_200d_1M_10_in_json.json
   * templates
     - simple.html
-    ** home.html
+    - home.html
   * static
     * css
       - theme.css
   - api.py
-    
+
+### Important
+Makes changes in the api.py as follows:
+1.
+```
+with open(os.path.expanduser('~/Python_Work/Deployment_001/Projects/api_007/Models/tokenizer_200d_1M_10.pickle'), 'rb') as handle:
+```
+to
+```
+with open(os.path.expanduser('$$YOUR_PATH_TO_PROJECT$$/Models/tokenizer_200d_1M_10.pickle'), 'rb') as handle:
+```
+
+2.
+```
+with open(os.path.expanduser('$$YOUR_PATH_TO_PROJECT$$/Models/best_model_200d_1M_10_in_json.json'),'r') as f:
+```
+to
+```
+with open(os.path.expanduser('$$YOUR_PATH_TO_PROJECT$$/Models/best_model_200d_1M_10_in_json.json'),'r') as f:
+```
+
+3.
+```
+loaded_model.load_weights(os.path.expanduser('$$YOUR_PATH_TO_PROJECT$$/Models/best_model_200d_1M_10.h5'))
+```
+to
+```
+loaded_model.load_weights(os.path.expanduser('$$YOUR_PATH_TO_PROJECT$$/Models/best_model_200d_1M_10.h5'))
+```
