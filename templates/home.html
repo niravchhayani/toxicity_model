@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>First Text Analysis App</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/theme.css') }}">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+        </script>
+        
+    </head>
+    <script>
+       function my_function() {
+            var inpt = $('#input_text').val();
+            $.ajax({
+                url: "/process",
+                type: "POST",
+                data: {inpt:inpt}
+            }).done(function(response){
+                var html= "<br><br><h1><i> Results: </i></h1>";
+                //console.log(response)
+                response1 = response.result;
+                response2 = response.data;
+                $.each(response2, function(key, val){
+                    console.log(val);
+                    html+="<div class='post_text'>Post: "+val+"</div>"
+                });
+                html += "<br><br><table><tr><th>Attribute</th><th>Score</th></tr>"
+                //console.log(response.data);
+                $.each(response1, function(key, val){
+                    console.log(val);
+                    //console.log(key);
+                    html+="<tr><td>"+ key +"</td><td>"+val+"</td><tr>"
+                });
+                html +="</table>";
+                //$(".show-data").append(html);
+                $(".show-data").html(html)
+            });
+       };
+    </script>
+    <body>
+        <div class="SQL_data">
+            Enter some text: <input type="text" id="input_text" value="">
+            <p> Click on the button to display the analysis done by our own model. </p>
+        </div>
+        <div>
+            <button onclick="my_function()" class="block">
+                Analyse
+            </button>
+        </div>
+        
+        <div class="show-data" id="show-data">
+        </div>
+    </body>
+</html>
